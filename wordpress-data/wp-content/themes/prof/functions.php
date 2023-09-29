@@ -4,6 +4,13 @@
         add_theme_support('title-tag');
     }
     
-    add_action('after_setup_theme', 'init_template')
+    add_action('after_setup_theme', 'init_template');
 
-?>
+    function assets(){
+        wp_register_style('daysiUI','https://cdn.jsdelivr.net/npm/daisyui@3.8.1/dist/full.css','','3.8.1','all');
+        wp_register_style('onest','https://fonts.googleapis.com/css2?family=Onest:wght@200;400;700&display=swap','','1.0','all');
+
+        wp_enqueue_style('estilos', get_stylesheet_uri(), array('daysiUI','onest'),'1.0', 'all');
+
+    }
+    add_action('wp_enqueue_scripts','assets');

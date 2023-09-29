@@ -6,4 +6,4 @@
     <title>Prof gifts</title>
     <?php wp_head()?>
 </head>
-<body>
+<body class="bg-base-100">
