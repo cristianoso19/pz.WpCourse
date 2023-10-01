@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof gifts</title>
+    <title>PzGiftz.com</title>
     <?php wp_head() ?>
 </head>
 
@@ -14,8 +14,18 @@
             <div class="flex-1">
                 <a class="btn btn-ghost normal-case text-xl">
                     PzGiftz
-                    <img src="<?php echo get_template_directory_uri()?>/assets/img/logo.svg" class="w-9" alt="logo">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.svg" class="w-9" alt="logo">
                 </a>
             </div>
-       </div>
+            <div class="flex-none">
+                <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'top_menu',
+                        'menu_class' => 'p-2',
+                        'container_class' => 'container-menu',
+                        )
+                    );
+                ?>
+            </div>
+        </div>
     </header>
