@@ -26,3 +26,20 @@
 
     }
     add_action('wp_enqueue_scripts','assets');
+    
+    //widget
+    function sidebar(){
+        register_sidebar(
+            array(
+                'name' => 'Pie de página',
+                'id' => 'footer',
+                'description' => 'Zona de widgets para footer',
+                'before_title' => '<p>',
+                'after_title' => '</p>',
+                'before_widget' => '<div id="%1$s" class="%2$s">',
+                'after_widget' => '</div>',
+            )
+        );
+    }
+
+    add_action('widgets_init', 'sidebar');
