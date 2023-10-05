@@ -17,11 +17,11 @@
                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.svg" class="w-9" alt="logo">
                 </a>
             </div>
-            <div class="flex-none">
+            <div class="flex-row ">
                 <?php wp_nav_menu(
                     array(
                         'theme_location' => 'top_menu',
-                        'menu_class' => 'p-2',
+                        'menu_class' => 'flex justify-between gap-x-6  p-2',
                         'container_class' => 'container-menu',
                         )
                     );
