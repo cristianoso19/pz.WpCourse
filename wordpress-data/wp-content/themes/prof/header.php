@@ -11,18 +11,16 @@
 <body class="">
     <header class="p-3">
         <div class="navbar rounded-2xl bg-base-300">
-            <div class="flex-1">
+            <div class="flex-auto">
                 <a class="btn btn-ghost normal-case text-xl">
                     PzGiftz
                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.svg" class="w-9" alt="logo">
                 </a>
-            </div>
-            <div class="flex-row ">
                 <?php wp_nav_menu(
                     array(
                         'theme_location' => 'top_menu',
-                        'menu_class' => 'flex justify-between gap-x-6  p-2',
-                        'container_class' => 'container-menu',
+                        'menu_class' => 'flex-1  justify-between gap-x-6  p-2',
+                        'container_class' => '',
                         )
                     );
                 ?>

@@ -5,7 +5,10 @@
     <?php
     if (have_posts()) {
         while (have_posts()) {
-            the_post(); ?>
+            the_post(); 
+            $url = get_the_post_thumbnail_url('', 'medium');
+            echo $url;
+            ?>
             <div class="hero w-full py-8 bg-base-200">
                 <div class="hero-content flex-col lg:flex-row">
                     <?php the_content(); ?>
