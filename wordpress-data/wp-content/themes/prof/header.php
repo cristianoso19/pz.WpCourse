@@ -19,8 +19,8 @@
                 <?php wp_nav_menu(
                     array(
                         'theme_location' => 'top_menu',
-                        'menu_class' => 'flex-1  justify-between gap-x-6  p-2',
-                        'container_class' => '',
+                        'menu_class' => 'flex justify-end gap-x-6 p-2 w-full',
+                        'container_class' => 'flex basis-full ',
                         )
                     );
                 ?>
