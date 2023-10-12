@@ -1227,6 +1227,12 @@ html {
   border-bottom-left-radius: var(--rounded-btn, 0.5rem);
   border-bottom-right-radius: var(--rounded-btn, 0.5rem);
 }
+.sticky {
+  position: sticky;
+}
+.bottom-0 {
+  bottom: 0px;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1237,8 +1243,17 @@ html {
 .flex {
   display: flex;
 }
+.h-screen {
+  height: 100vh;
+}
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-full {
+  min-height: 100%;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .w-9 {
   width: 2.25rem;
@@ -1252,14 +1267,35 @@ html {
 .max-w-md {
   max-width: 28rem;
 }
+.max-w-sm {
+  max-width: 24rem;
+}
 .flex-auto {
   flex: 1 1 auto;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 .basis-full {
   flex-basis: 100%;
 }
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
 .justify-end {
   justify-content: flex-end;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
@@ -1267,6 +1303,9 @@ html {
 }
 .rounded-2xl {
   border-radius: 1rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 .bg-base-200 {
   --tw-bg-opacity: 1;
@@ -1276,8 +1315,15 @@ html {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b3) / var(--tw-bg-opacity));
 }
+.bg-neutral {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--n) / var(--tw-bg-opacity));
+}
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
+}
+.fill-current {
+  fill: currentColor;
 }
 .p-10 {
   padding: 2.5rem;
@@ -1287,6 +1333,33 @@ html {
 }
 .p-3 {
   padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .text-center {
   text-align: center;
@@ -1298,6 +1371,10 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1312,4 +1389,38 @@ html {
 .text-neutral-content {
   --tw-text-opacity: 1;
   color: hsl(var(--nc) / var(--tw-text-opacity));
+}
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+@media (min-width: 768px) {
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:max-w-screen-md {
+    max-width: 768px;
+  }
+
+  .md\:place-self-center {
+    place-self: center;
+  }
+
+  .md\:justify-self-end {
+    justify-self: end;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lg\:max-w-screen-lg {
+    max-width: 1024px;
+  }
 }

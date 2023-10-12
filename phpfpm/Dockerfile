@@ -13,3 +13,4 @@ RUN apk add --no-cache --virtual build-essentials \
     docker-php-ext-install exif && \
     docker-php-ext-install zip && \
     apk del build-essentials && rm -rf /usr/src/php*
+RUN printf 'post_max_size = 256M\nupload_max_filesize = 256M' >> /usr/local/etc/php/conf.d/uploads.ini \
