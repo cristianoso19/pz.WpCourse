@@ -8,13 +8,13 @@
     <?php wp_head() ?>
 </head>
 
-<body class="">
+<body class="flex flex-col h-screen">
     <header class="p-3">
         <div class="navbar rounded-2xl bg-base-300">
             <div class="flex-auto">
                 <a class="btn btn-ghost normal-case text-xl">
-                    PzGiftz
                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.svg" class="w-9" alt="logo">
+                    PzGiftz
                 </a>
                 <?php wp_nav_menu(
                     array(
