@@ -652,11 +652,14 @@ html {
 }
 @media (hover:hover) {
 
+<<<<<<< HEAD
   .label a:hover {
     --tw-text-opacity: 1;
     color: hsl(var(--bc) / var(--tw-text-opacity));
   }
 
+=======
+>>>>>>> tailwind
   .menu li > *:not(ul):not(.menu-title):not(details):active,
 .menu li > *:not(ul):not(.menu-title):not(details).active,
 .menu li > details > summary:active {
@@ -739,6 +742,16 @@ html {
     background-color: hsl(var(--b3) / var(--tw-bg-opacity));
   }
 
+<<<<<<< HEAD
+=======
+  .btn-primary:hover {
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--pf) / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--pf) / var(--tw-bg-opacity));
+  }
+
+>>>>>>> tailwind
   .btn.glass:hover {
     --glass-opacity: 25%;
     --glass-border-opacity: 15%;
@@ -750,6 +763,18 @@ html {
     --tw-bg-opacity: 0.2;
   }
 
+<<<<<<< HEAD
+=======
+  .btn-outline.btn-primary:hover {
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--pf) / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--pf) / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: hsl(var(--pc) / var(--tw-text-opacity));
+  }
+
+>>>>>>> tailwind
   .btn-disabled:hover,
     .btn[disabled]:hover,
     .btn:disabled:hover {
@@ -802,6 +827,7 @@ html {
     grid-auto-flow: row dense;
   }
 }
+<<<<<<< HEAD
 .label {
   display: flex;
   -webkit-user-select: none;
@@ -814,6 +840,8 @@ html {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+=======
+>>>>>>> tailwind
 .hero {
   display: grid;
   width: 100%;
@@ -936,10 +964,13 @@ html {
 .swap input:indeterminate ~ .swap-indeterminate {
   opacity: 1;
 }
+<<<<<<< HEAD
 .btm-nav > * .label {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+=======
+>>>>>>> tailwind
 .btn:active:hover,
   .btn:active:focus {
   animation: button-pop 0s ease-out;
@@ -950,6 +981,24 @@ html {
   outline-width: 2px;
   outline-offset: 2px;
 }
+<<<<<<< HEAD
+=======
+.btn-primary {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
+  outline-color: hsl(var(--p) / 1);
+}
+.btn-primary.btn-active {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--pf) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--pf) / var(--tw-bg-opacity));
+}
+>>>>>>> tailwind
 .btn.glass {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
@@ -975,6 +1024,21 @@ html {
   background-color: hsl(var(--bc) / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }
+<<<<<<< HEAD
+=======
+.btn-outline.btn-primary {
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
+}
+.btn-outline.btn-primary.btn-active {
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--pf) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--pf) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--pc) / var(--tw-text-opacity));
+}
+>>>>>>> tailwind
 .btn.btn-disabled,
   .btn[disabled],
   .btn:disabled {
@@ -1227,30 +1291,67 @@ html {
   border-bottom-left-radius: var(--rounded-btn, 0.5rem);
   border-bottom-right-radius: var(--rounded-btn, 0.5rem);
 }
+<<<<<<< HEAD
 .sticky {
   position: sticky;
 }
 .bottom-0 {
   bottom: 0px;
 }
+=======
+>>>>>>> tailwind
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
+<<<<<<< HEAD
+=======
+.ml-0 {
+  margin-left: 0px;
+}
+.mr-0 {
+  margin-right: 0px;
+}
+>>>>>>> tailwind
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 .flex {
   display: flex;
 }
+<<<<<<< HEAD
 .h-screen {
   height: 100vh;
+=======
+.h-4\/5 {
+  height: 80%;
+>>>>>>> tailwind
 }
 .min-h-screen {
   min-height: 100vh;
 }
+<<<<<<< HEAD
 .w-1\/2 {
   width: 50%;
+=======
+.min-h-max {
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+.min-h-full {
+  min-height: 100%;
+}
+.min-h-min {
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
+.min-h-\[50\%\] {
+  min-height: 50%;
+>>>>>>> tailwind
 }
 .w-9 {
   width: 2.25rem;
@@ -1264,12 +1365,18 @@ html {
 .max-w-md {
   max-width: 28rem;
 }
+<<<<<<< HEAD
 .max-w-sm {
   max-width: 24rem;
+=======
+.flex-1 {
+  flex: 1 1 0%;
+>>>>>>> tailwind
 }
 .flex-auto {
   flex: 1 1 auto;
 }
+<<<<<<< HEAD
 .flex-grow {
   flex-grow: 1;
 }
@@ -1290,6 +1397,19 @@ html {
 }
 .gap-4 {
   gap: 1rem;
+=======
+.basis-full {
+  flex-basis: 100%;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+>>>>>>> tailwind
 }
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
@@ -1298,9 +1418,12 @@ html {
 .rounded-2xl {
   border-radius: 1rem;
 }
+<<<<<<< HEAD
 .rounded-lg {
   border-radius: 0.5rem;
 }
+=======
+>>>>>>> tailwind
 .bg-base-200 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b2) / var(--tw-bg-opacity));
@@ -1312,9 +1435,12 @@ html {
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
+<<<<<<< HEAD
 .fill-current {
   fill: currentColor;
 }
+=======
+>>>>>>> tailwind
 .p-10 {
   padding: 2.5rem;
 }
@@ -1324,6 +1450,7 @@ html {
 .p-3 {
   padding: 0.75rem;
 }
+<<<<<<< HEAD
 .p-4 {
   padding: 1rem;
 }
@@ -1334,10 +1461,24 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+=======
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.text-left {
+  text-align: left;
+>>>>>>> tailwind
 }
 .text-center {
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+.text-right {
+  text-align: right;
+}
+>>>>>>> tailwind
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1360,6 +1501,7 @@ html {
   --tw-text-opacity: 1;
   color: hsl(var(--nc) / var(--tw-text-opacity));
 }
+<<<<<<< HEAD
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1388,5 +1530,11 @@ html {
 
   .lg\:max-w-screen-lg {
     max-width: 1024px;
+=======
+@media (min-width: 1024px) {
+
+  .lg\:flex-row {
+    flex-direction: row;
+>>>>>>> tailwind
   }
 }

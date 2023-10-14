@@ -5,6 +5,7 @@
     <?php
     if (have_posts()) {
         while (have_posts()) {
+<<<<<<< HEAD
             the_post(); 
             
             $thumbnail_id = get_post_thumbnail_id();
@@ -42,7 +43,21 @@
                         <h1 class="text-5xl font-bold"><?php the_title(); ?></h1>
                     </div>
                 </div>
+=======
+            the_post();
+            $url = get_the_post_thumbnail_url();
+    ?>
+
+    <div class="hero min-h-screen" style="background-image: url(<?php echo $url ?>);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+                <h class="mb-5 text-5xl font-bold"><?php the_title(); ?></h>
+>>>>>>> tailwind
             </div>
+        </div>
+    </div>
+
     <?php
         }
     }
