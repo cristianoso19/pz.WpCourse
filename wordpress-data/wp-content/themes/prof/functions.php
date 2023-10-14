@@ -45,8 +45,8 @@
     add_action('widgets_init', 'sidebar');
     function productos_type(){
         $labels = array(
-            'name' => __('Productos','textdomain'),
-            'singular_name' => __('Producto','textdomain'),
+            'name' => 'Productos',
+            'singular_name' => 'Producto',
             'menu_name' => 'Productos',
         );
     
@@ -61,7 +61,7 @@
             'menu_icon'     => 'dashicons-cart',
             'can_export' => true,
             'publicly_queryable' => true,
-            'rewrite'       => array( 'slug' => 'producto' ),
+            'rewrite'       => true,
             'show_in_rest' => true,
             'has_archive' => true,
         );    
