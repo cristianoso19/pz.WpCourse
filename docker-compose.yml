@@ -1,17 +1,23 @@
-version: '3.9'
+version: '3.8'
 services:
-  wordpress:
-    image: wordpress:latest
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    #image: nginx:alpine
     ports:
       - "80:80"
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: password
-      WORDPRESS_DB_NAME: wordpress
     volumes:
       - ./wordpress-data:/var/www/html/
-
+      - ./logsnginx:/var/log/nginx/
+  php:
+    build:
+      context: .
+      dockerfile: phpfpm/Dockerfile
+#    image: php:fpm-alpine
+    volumes:
+      - ./wordpress-data:/var/www/html/
+      - ./logsphp:/var/log/fpm-php.www.log
   db:
     image: mysql:latest
     environment:
@@ -19,9 +25,22 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: password
+    user: mysql
     volumes:
       - ./mysql-data:/var/lib/mysql
-
+  #wordpress:
+  #  image: wordpress:latest
+  #  ports:
+  #    - "80:80"
+  #  environment:
+  #    WORDPRESS_DB_HOST: db
+  #    WORDPRESS_DB_USER: wordpress
+  #    WORDPRESS_DB_PASSWORD: password
+  #    WORDPRESS_DB_NAME: wordpress
+  #  volumes:
+  #    - ./wordpress-data:/var/www/html/
 volumes:
   wordpress-data:
+  logsnginx:
+  logsphp:
   mysql-data:
