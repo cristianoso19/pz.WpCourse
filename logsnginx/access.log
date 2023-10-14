@@ -2590,3 +2590,4 @@
 172.18.0.1 - - [14/Oct/2023:03:13:35 +0000] "GET /producto/razer-cyberpunk-mouse/ HTTP/1.1" 200 27740 "http://127.0.0.1/wp-admin/edit.php?post_type=producto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" "-"
 172.18.0.1 - - [14/Oct/2023:03:13:42 +0000] "GET / HTTP/1.1" 200 27100 "http://127.0.0.1/producto/razer-cyberpunk-mouse/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" "-"
 172.18.0.1 - - [14/Oct/2023:03:16:08 +0000] "GET /my-first-pagebox-office-news/ HTTP/1.1" 200 27252 "http://127.0.0.1/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" "-"
+172.18.0.1 - - [14/Oct/2023:03:19:11 +0000] "GET / HTTP/1.1" 200 27100 "http://127.0.0.1/my-first-pagebox-office-news/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" "-"

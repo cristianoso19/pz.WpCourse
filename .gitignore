@@ -6,3 +6,4 @@ logsnginx/
 logsnginx/access.log
 logsphp/
 wordpress-data/wp-content/themes/prof/dist*
+logsnginx/access.log
