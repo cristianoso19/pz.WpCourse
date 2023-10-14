@@ -2,7 +2,7 @@ mysql-data
 wordpress-data/wp-content/languages
 wordpress-data/wp-content/themes/prof/node_modules
 wordpress-data/wp-content/uploads/2023wordpress-data/wp-content/uploads/
-logsnginx/*
+logsnginx/
 logsnginx/access.log
 logsphp/
 wordpress-data/wp-content/themes/prof/dist*
