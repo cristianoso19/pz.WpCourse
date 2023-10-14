@@ -1,6 +1,7 @@
 {
   "name": "prof",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
     "bun-types": "latest",
     "daisyui": "^3.9.2",
