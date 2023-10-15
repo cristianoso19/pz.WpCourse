@@ -94,3 +94,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+// ** FTP CONFIGURACIÓN PARA AUTO-FTP ** //
+define('FS_METHOD','direct');
+
+
+/*define('FTP_HOST', 'localhost');
+define('FTP_USER', 'NombredeUsuarioFTP');
+define('FTP_PASS', 'ContraseñaFTP');*/
